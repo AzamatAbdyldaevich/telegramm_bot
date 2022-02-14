@@ -96,8 +96,7 @@ def send_cource(call):
     if call.data == 'Prius':
         bot.send_message(call.message.chat.id, f'Вы выбрали {call.data}'
                                                ', ознакомтесь подробнее с характиристиками машины:')
-        bot.send_photo(call.message.chat.id,
-                       photo="https://carsdo.ru/job/CarsDo/photo-gallery/toyota/prius-1-1.jpg")
+        bot.send_photo(call.message.chat.id, photo="https://carsdo.ru/job/CarsDo/photo-gallery/toyota/prius-1-1.jpg")
         f = open('Prius.txt')
         for line in f:
             bot.send_message(call.message.chat.id, line)
