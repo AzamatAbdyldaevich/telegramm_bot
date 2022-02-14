@@ -43,71 +43,72 @@ def send_cource(call):
     if call.data == 'LandCruiser':
         bot.send_message(call.message.chat.id, f'Вы выбрали {call.data}'
                                                ' Ознакомтесь подробнее с характиристиками машины:')
+
         bot.send_photo(call.message.chat.id,
                        photo="https://s0.rbk.ru/v6_top_pics/resized/1440xH/media/img/4/51/756250743360514.jpg")
-        bot.send_message(call.message.chat.id, "Цвет: белый")
-        bot.send_message(call.message.chat.id, "Коробка передач: авто")
-        bot.send_message(call.message.chat.id, "Расход топлива: 10л./15л.")
-        bot.send_message(call.message.chat.id, "Стоимость аренды за стуки: 2000 сом")
+        f = open('LandCruiser.txt')
+        for line in f:
+            bot.send_message(call.message.chat.id, line)
+        f.close()
         dostavka(call.message.chat.id)
     if call.data == 'LandCruiserPrado':
         bot.send_message(call.message.chat.id, f'Вы выбрали {call.data}'
-                                               ' Ознакомтесь подробнее с характиристиками машины:')
+                                               ', ознакомтесь подробнее с характиристиками машины:')
         bot.send_photo(call.message.chat.id,
                        photo="http://cdn.motorpage.ru/Photos/800/01a88.jpg")
-        bot.send_message(call.message.chat.id, "Цвет: белый")
-        bot.send_message(call.message.chat.id, "Коробка передач: авто")
-        bot.send_message(call.message.chat.id, "Расход топлива: 10л./15л.")
-        bot.send_message(call.message.chat.id, "Стоимость аренды за стуки: 2000 сом")
+        f = open('LandCruiserPrado.txt')
+        for line in f:
+            bot.send_message(call.message.chat.id, line)
+        f.close()
         dostavka(call.message.chat.id)
 
     if call.data == 'Harrier':
         bot.send_message(call.message.chat.id, f'Вы выбрали {call.data}'
-                                               ' Ознакомтесь подробнее с характиристиками машины:')
+                                               ', ознакомтесь подробнее с характиристиками машины:')
         bot.send_photo(call.message.chat.id,
                        photo="https://a.d-cd.net/7b4ad2es-960.jpg")
-        bot.send_message(call.message.chat.id, "Цвет: белый")
-        bot.send_message(call.message.chat.id, "Коробка передач: авто")
-        bot.send_message(call.message.chat.id, "Расход топлива: 10л./15л.")
-        bot.send_message(call.message.chat.id, "Стоимость аренды за стуки: 2000 сом")
+        f = open('Harrier.txt')
+        for line in f:
+            bot.send_message(call.message.chat.id, line)
+        f.close()
         dostavka(call.message.chat.id)
 
     if call.data == 'Windom':
         bot.send_message(call.message.chat.id, f'Вы выбрали {call.data}'
-                                               ' Ознакомтесь подробнее с характиристиками машины:')
+                                               ', ознакомтесь подробнее с характиристиками машины:')
         bot.send_photo(call.message.chat.id,
-                       photo="https://s0.rbk.ru/v6_top_pics/resized/1440xH/media/img/4/51/756250743360514.jpg")
-        bot.send_message(call.message.chat.id, "Цвет: белый")
-        bot.send_message(call.message.chat.id, "Коробка передач: авто")
-        bot.send_message(call.message.chat.id, "Расход топлива: 10л./15л.")
-        bot.send_message(call.message.chat.id, "Стоимость аренды за стуки: 2000 сом")
+                       photo="https://mezamo.ru/images/toyota-windom-2004-2006-%D1%81%D0%B5%D0%B4%D0%B0%D0%BD/toyota-windom-2004-2006-sedan.jpg")
+        f = open('Windom.txt')
+        for line in f:
+            bot.send_message(call.message.chat.id, line)
+        f.close()
         dostavka(call.message.chat.id)
     if call.data == 'Camry':
         bot.send_message(call.message.chat.id, f'Вы выбрали {call.data}'
-                                               ' Ознакомтесь подробнее с характиристиками машины:')
+                                               ', ознакомтесь подробнее с характиристиками машины:')
         bot.send_photo(call.message.chat.id,
-                       photo="https://s0.rbk.ru/v6_top_pics/resized/1440xH/media/img/4/51/756250743360514.jpg")
-        bot.send_message(call.message.chat.id, "Цвет: белый")
-        bot.send_message(call.message.chat.id, "Коробка передач: авто")
-        bot.send_message(call.message.chat.id, "Расход топлива: 10л./15л.")
-        bot.send_message(call.message.chat.id, "Стоимость аренды за стуки: 2000 сом")
+                       photo="https://carsdo.ru/job/CarsDo/photo-gallery/toyota/camry-1-1.jpg")
+        f = open('Camry.txt')
+        for line in f:
+            bot.send_message(call.message.chat.id, line)
+        f.close()
         dostavka(call.message.chat.id)
     if call.data == 'Prius':
         bot.send_message(call.message.chat.id, f'Вы выбрали {call.data}'
-                                               ' Ознакомтесь подробнее с характиристиками машины:')
+                                               ', ознакомтесь подробнее с характиристиками машины:')
         bot.send_photo(call.message.chat.id,
-                       photo="https://s0.rbk.ru/v6_top_pics/resized/1440xH/media/img/4/51/756250743360514.jpg")
-        bot.send_message(call.message.chat.id, "Цвет: белый")
-        bot.send_message(call.message.chat.id, "Коробка передач: авто")
-        bot.send_message(call.message.chat.id, "Расход топлива: 10л./15л.")
-        bot.send_message(call.message.chat.id, "Стоимость аренды за стуки: 2000 сом")
+                       photo="https://carsdo.ru/job/CarsDo/photo-gallery/toyota/prius-1-1.jpg")
+        f = open('Prius.txt')
+        for line in f:
+            bot.send_message(call.message.chat.id, line)
+        f.close()
         dostavka(call.message.chat.id)
 
     if call.data == 'salon':
         bot.send_message(call.message.chat.id, "Вы можете забрать машину по адресу:\n"
                                                "г. Бишкек, ул. Суюмбаева, 123, контактные данные: +996555500000")
     if call.data == 'home':
-        bot.send_message(call.message.chat.id, "Введите Ваш адрес:")
+        bot.send_message(call.message.chat.id, "Введите Ваш адрес и контактные данные:")
 
 
 @bot.message_handler(content_types=['text'])
